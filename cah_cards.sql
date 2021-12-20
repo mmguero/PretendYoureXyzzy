@@ -69,8 +69,8 @@ ALTER TABLE black_cards OWNER TO pyx;
 
 CREATE TABLE card_set (
     id integer NOT NULL,
-    active boolean NOT NULL,
-    base_deck boolean NOT NULL,
+    active integer NOT NULL,
+    base_deck integer NOT NULL,
     description character varying(255),
     name character varying(255),
     weight integer NOT NULL
@@ -648,48 +648,48 @@ COPY black_cards (id, draw, pick, text, watermark) FROM stdin;
 --
 
 COPY card_set (id, active, base_deck, description, name, weight) FROM stdin;
-2	t	f	Base Game (US)	Base Game (US)	1
-103	t	f	Base Game (Canada)	Base Game (Canada)	2
-134	t	f	Base Game (UK)	Base Game (UK)	3
-166	t	f	Base Game (Australia)	Base Game (Australia)	4
-191	t	f	Base Game (International)	Base Game (International)	5
-235	t	f	Red Box Expansion	Red Box Expansion	10
-271	t	f	Blue Box Expansion	Blue Box Expansion	10
-342	t	f	Green Box Expansion	Green Box Expansion	10
-398	t	f	90s Nostalgia Pack	90s Nostalgia Pack	30
-406	t	f	Holiday Pack 2012	Holiday Pack 2012	80
-414	t	f	Vote for Hillary Pack	Vote for Hillary Pack	70
-417	t	f	Vote for Trump Pack	Vote for Trump Pack	71
-421	t	f	House of Cards Pack	House of Cards Pack	30
-430	t	f	College Pack	College Pack	30
-437	t	f	Holiday Pack 2013	Holiday Pack 2013	80
-447	t	f	Fantasy Pack	Fantasy Pack	30
-454	t	f	Mass Effect Pack	Mass Effect Pack	101
-459	t	f	Holiday Pack 2014	Holiday Pack 2014	80
-466	t	f	NASA Pack	NASA Pack	30
-469	t	f	Food Pack	Food Pack	30
-476	t	f	PAX East 2013 Pack A	PAX East 2013 Pack A	102
-478	t	f	Season's Greetings Pack	Season's Greetings Pack	83
-482	t	f	PAX East 2013 Pack B	PAX East 2013 Pack B	103
-485	t	f	PAX East 2013 Pack C	PAX East 2013 Pack C	104
-487	t	f	Geek Pack	Geek Pack	30
-494	t	f	PAX East 2014 Pack	PAX East 2014 Pack	106
-499	t	f	Jew Pack	Jew Pack	30
-505	t	f	PAX Prime 2013 Pack	PAX Prime 2013 Pack	105
-510	t	f	Period Pack	Period Pack	30
-517	t	f	Post-Trump Pack	Post-Trump Pack	72
-521	t	f	Reject Pack	Reject Pack	30
-530	t	f	Retail Pack	Retail Pack	30
-533	t	f	Sci-Fi Pack	Sci-Fi Pack	30
-541	t	f	Reject Pack 2	Reject Pack 2	30
-552	t	f	Science Pack	Science Pack	30
-560	t	f	Weed Pack	Weed Pack	30
-566	t	f	Retail Product Pack	Retail Product Pack	30
-568	t	f	Tabletop Pack	Tabletop Pack	100
-572	t	f	World Wide Web Pack	World Wide Web Pack	30
-2131	t	f	Box Expansion Pack	Box Expansion Pack	30
-2152	t	f	Hidden Compartment Pack	Hidden Compartment Pack	30
-2374	t	f	PAX Prime 2014 Pack	PAX Prime 2014 Pack	107
+2	1	1	Base Game (US)	Base Game (US)	1
+103	1	1	Base Game (Canada)	Base Game (Canada)	2
+134	1	1	Base Game (UK)	Base Game (UK)	3
+166	1	1	Base Game (Australia)	Base Game (Australia)	4
+191	1	1	Base Game (International)	Base Game (International)	5
+235	1	1	Red Box Expansion	Red Box Expansion	10
+271	1	1	Blue Box Expansion	Blue Box Expansion	10
+342	1	1	Green Box Expansion	Green Box Expansion	10
+398	1	0	90s Nostalgia Pack	90s Nostalgia Pack	30
+406	1	0	Holiday Pack 2012	Holiday Pack 2012	80
+414	1	0	Vote for Hillary Pack	Vote for Hillary Pack	70
+417	1	0	Vote for Trump Pack	Vote for Trump Pack	71
+421	1	0	House of Cards Pack	House of Cards Pack	30
+430	1	0	College Pack	College Pack	30
+437	1	0	Holiday Pack 2013	Holiday Pack 2013	80
+447	1	0	Fantasy Pack	Fantasy Pack	30
+454	1	0	Mass Effect Pack	Mass Effect Pack	101
+459	1	0	Holiday Pack 2014	Holiday Pack 2014	80
+466	1	0	NASA Pack	NASA Pack	30
+469	1	0	Food Pack	Food Pack	30
+476	1	0	PAX East 2013 Pack A	PAX East 2013 Pack A	102
+478	1	0	Season's Greetings Pack	Season's Greetings Pack	83
+482	1	0	PAX East 2013 Pack B	PAX East 2013 Pack B	103
+485	1	0	PAX East 2013 Pack C	PAX East 2013 Pack C	104
+487	1	0	Geek Pack	Geek Pack	30
+494	1	0	PAX East 2014 Pack	PAX East 2014 Pack	106
+499	1	0	Jew Pack	Jew Pack	30
+505	1	0	PAX Prime 2013 Pack	PAX Prime 2013 Pack	105
+510	1	0	Period Pack	Period Pack	30
+517	1	0	Post-Trump Pack	Post-Trump Pack	72
+521	1	0	Reject Pack	Reject Pack	30
+530	1	0	Retail Pack	Retail Pack	30
+533	1	0	Sci-Fi Pack	Sci-Fi Pack	30
+541	1	0	Reject Pack 2	Reject Pack 2	30
+552	1	0	Science Pack	Science Pack	30
+560	1	0	Weed Pack	Weed Pack	30
+566	1	0	Retail Product Pack	Retail Product Pack	30
+568	1	0	Tabletop Pack	Tabletop Pack	100
+572	1	0	World Wide Web Pack	World Wide Web Pack	30
+2131	1	0	Box Expansion Pack	Box Expansion Pack	30
+2152	1	0	Hidden Compartment Pack	Hidden Compartment Pack	30
+2374	1	0	PAX Prime 2014 Pack	PAX Prime 2014 Pack	107
 \.
 
 
