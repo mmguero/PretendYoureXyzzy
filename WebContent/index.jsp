@@ -38,12 +38,6 @@ to, for instance, display the number of connected players.
 <link rel="stylesheet" type="text/css" href="cah.css" media="screen" />
 </head>
 <body>
-<div id="tweetbox">
-  <h3>Recent tweets (mainly server status updates)</h3>
-  <a class="twitter-timeline" data-height="500" data-dnt="true" data-theme="light"
-  href="https://twitter.com/_PYX_?ref_src=twsrc%5Etfw">Tweets by _PYX_</a>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
 <h1>
   Pretend You're <dfn style="border-bottom: 1px dotted black"
   title="Xyzzy is an Artificial Unintelligence bot. You'll be making more sense than him in this game.">
