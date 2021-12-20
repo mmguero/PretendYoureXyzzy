@@ -6049,7 +6049,6 @@ COPY white_cards (id, text, watermark) FROM stdin;
 1449	Another shot of morphine.	INTL
 1450	Bosnian chicken farmers.	INTL
 1452	Having shotguns for legs.	INTL
-1453	Bullshit.	INTL
 1457	Santa Claus.	INTL
 1460	Jafar.	RED
 1461	Jumping out at people.	RED
